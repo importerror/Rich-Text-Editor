@@ -1,0 +1,6 @@
+[contenteditable] {
+  border: 1px solid #000;
+  line-height: 1.4em;
+  -webkit-appearance: textfield;
+  appearance: textfield
+}
