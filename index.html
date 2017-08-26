@@ -5,47 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="src/css/main.css">
 </head>
 <body>
-	<div contenteditable="true">
-		
-	</div>
+	<div id="main-screen"></div>
+	<div contenteditable="true"></div>
+	<button type="submit">Send</button>
+
 	<script type="text/javascript" src="src/js/richText.js"></script>
-	<script type="text/javascript">
-		(function(){
-			let count = 0;
-			let newWord;
-
-			const textToEmoji = {
-				':)': '<img src="http://i.stack.imgur.com/nO2hl.png" />',
-				';)': '<img src="http://i.stack.imgur.com/IjpTt.png" />',
-
-			}
-
-			var finder = function() {
-				console.log("test");
-			}
-
-			document.querySelector('[contenteditable]').addEventListener('keydown', function(event){
-				let word = '';
-				debugger;
-				if(event.code === 'Space') {
-					// count every occurence of space
-					count = count + 1;
-					wordSplit = this.innerText.split(" ");
-					word = wordSplit[count-1];
-					for(let key in textToEmoji){
-						if(key===word) {
-							wordSplit.pop();
-							wordSplit.push(textToEmoji[key]);
-							newWord = wordSplit.join(" ");
-							this.innerHTML = newWord;
-							console.log("replaced");
-						} else {
-							console.log("didnt matched");
-						}
-					}
-				}
-			})
-		})();
-	</script>
 </body>
 </html>

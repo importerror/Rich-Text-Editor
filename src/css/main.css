@@ -1,6 +1,32 @@
 [contenteditable] {
   border: 1px solid #000;
   line-height: 1.4em;
+  height: 30px;
+  width: 30%;
+  display: inline-block;
   -webkit-appearance: textfield;
-  appearance: textfield
+  appearance: textfield;
+  
+}
+
+img {
+	display: inline-block;
+	width: 25px;
+	padding: 2px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-screen {
+    background: whitesmoke;
+    width: 30%;
+    height: 330px;
+    overflow-y: scroll;
+}
+
+.user-text {
+    background: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 13px;
 }
